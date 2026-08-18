@@ -1,0 +1,34 @@
+{
+  "title": "NetworkPolicies and the HPA",
+  "description": "Apply a default-deny and prove it actually blocks traffic, allow back exactly what the application needs including the DNS everyone forgets, then find out why an HPA with no resource requests does nothing at all.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Default deny, and proving it is real",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Allow exactly what is needed",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "The HPA that does nothing",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  },
+  "labId": "lab-13-kubernetes-security-hardening-networkpolicies-hpa"
+}

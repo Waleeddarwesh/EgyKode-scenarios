@@ -15,6 +15,7 @@ with nothing to install.
 | `helm-custom-chart` | A Custom Helm Chart That Rolls on Config Change | kubernetes-kubeadm-1node |
 | `helm-upgrade-rollback` | Helm Upgrades, Rollbacks and Release Strategy | kubernetes-kubeadm-1node |
 | `k8s-config-secrets` | Kubernetes Config & Secrets: Probes, Limits, Rollouts | kubernetes-kubeadm-1node |
+| `k8s-networkpolicy-hpa` | NetworkPolicies and the HPA | kubernetes-kubeadm-1node |
 | `k8s-node-drain` | Node Drain: Maintenance Without an Outage | kubernetes-kubeadm-2nodes |
 | `k8s-rbac-service-accounts` | Kubernetes RBAC & Service Accounts | kubernetes-kubeadm-1node |
 | `k8s-services-endpoints` | Kubernetes Services: Endpoints, DNS and the Empty List | kubernetes-kubeadm-1node |
