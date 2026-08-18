@@ -1,0 +1,39 @@
+{
+  "title": "Terraform Fundamentals: Plan, Apply, State, Destroy",
+  "description": "Build an instance and a bucket from one configuration, read the plan before it runs, find the line of state that maps a resource to its real id, and destroy it all with proof.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "A pinned provider, values in and out",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Two resources, one apply",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Why the second apply does nothing",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "Destroy, and check rather than assume",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-terraform-fundamentals"
+}
