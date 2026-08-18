@@ -26,6 +26,7 @@ with nothing to install.
 | `linux-ssh-hardening` | SSH Hardening Without Locking Yourself Out | ubuntu |
 | `linux-users-permissions-services` | Linux Server Administration: Users, Permissions, Services | ubuntu |
 | `network-layer-diagnosis` | Network Diagnosis: Name, Route, Reachability | ubuntu |
+| `postgres-backup-restore` | Backup and Restore You Have Actually Tested | ubuntu |
 | `reverse-proxy-load-balancing` | Reverse Proxy and Load Balancing: 502 vs 504 | ubuntu |
 | `terraform-ci-gate` | The Terraform Gate: fmt, validate, lint, scan, plan | ubuntu |
 | `terraform-fundamentals` | Terraform Fundamentals: Plan, Apply, State, Destroy | ubuntu |
