@@ -5,6 +5,7 @@ with nothing to install.
 
 | Directory | Scenario | Backend |
 | --- | --- | --- |
+| `aws-vpc-networking` | AWS VPC: Subnets, Gateways and Route Tables | ubuntu |
 | `bash-backup-retention` | A Backup Script You Can Trust | ubuntu |
 | `docker-multi-stage-build` | Production-Grade Multi-Stage Dockerfile | ubuntu |
 | `docker-networks-volumes-healthchecks` | Docker Networks, Volumes and Healthchecks | ubuntu |

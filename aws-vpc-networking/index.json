@@ -1,0 +1,39 @@
+{
+  "title": "AWS VPC: Subnets, Gateways and Route Tables",
+  "description": "Lay a VPC across two availability zones, add the gateway that makes a subnet public and the one that lets a private subnet out, and find the single line that decides which is which.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Four subnets, two availability zones",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Two gateways that are not alike",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Where public and private are actually decided",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "Destroy, and check the Elastic IP",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-01-aws-vpc-subnets-gateways-route-tables"
+}
