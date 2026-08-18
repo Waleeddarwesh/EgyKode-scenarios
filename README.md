@@ -8,6 +8,7 @@ with nothing to install.
 | `ansible-roles-idempotency` | Ansible Roles and Idempotency You Can Prove | ubuntu |
 | `aws-vpc-networking` | AWS VPC: Subnets, Gateways and Route Tables | ubuntu |
 | `bash-backup-retention` | A Backup Script You Can Trust | ubuntu |
+| `docker-compose-reverse-proxy` | Nginx, Gunicorn and Postgres in One Compose Stack | ubuntu |
 | `docker-multi-stage-build` | Production-Grade Multi-Stage Dockerfile | ubuntu |
 | `docker-networks-volumes-healthchecks` | Docker Networks, Volumes and Healthchecks | ubuntu |
 | `git-branching-collaboration` | Git Branching & Collaboration | ubuntu |

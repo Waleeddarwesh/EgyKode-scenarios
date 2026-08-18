@@ -1,0 +1,34 @@
+{
+  "title": "Nginx, Gunicorn and Postgres in One Compose Stack",
+  "description": "Serve static files from nginx and proxy the rest to Gunicorn, make the app wait for a database that is ready rather than merely started, keep the data across a down and up, and pass the real client IP through the proxy.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "The proxy, and the header it drops by default",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Started is not ready",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Data that survives down and up",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-10-nginx-reverse-proxy-multi-container-docker-compose-stack"
+}
