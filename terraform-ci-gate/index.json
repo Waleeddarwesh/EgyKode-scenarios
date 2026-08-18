@@ -1,0 +1,39 @@
+{
+  "title": "The Terraform Gate: fmt, validate, lint, scan, plan",
+  "description": "Chain the checks that stop a bad change before it reaches AWS, prove each one catches something real, and apply the exact plan that was reviewed.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "The cheap checks, first",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "What validate cannot see",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Apply the plan that was reviewed",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "One gate, and a drift check",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-terraform-testing-ci"
+}

@@ -23,6 +23,7 @@ with nothing to install.
 | `linux-users-permissions-services` | Linux Server Administration: Users, Permissions, Services | ubuntu |
 | `network-layer-diagnosis` | Network Diagnosis: Name, Route, Reachability | ubuntu |
 | `reverse-proxy-load-balancing` | Reverse Proxy and Load Balancing: 502 vs 504 | ubuntu |
+| `terraform-ci-gate` | The Terraform Gate: fmt, validate, lint, scan, plan | ubuntu |
 | `tls-certificate-diagnosis` | TLS Diagnosis: Read the Certificate, Name the Layer | ubuntu |
 
 Each is three steps with a verification script per step, a setup script that
