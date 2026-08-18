@@ -1,0 +1,39 @@
+{
+  "title": "Terraform Remote State and Locking",
+  "description": "Move state into S3 without recreating a single resource, then race two applies and watch the lock refuse the second one.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "The bucket that cannot create itself",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Declare the backend and migrate",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Race two applies",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "When a lock goes stale",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-terraform-remote-state"
+}
