@@ -1,0 +1,39 @@
+{
+  "title": "Ansible Roles and Idempotency You Can Prove",
+  "description": "Build a role whose values all come from variables, restart the service exactly once through a handler, then demonstrate changed=0 and break it on purpose to see how.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "The role layout, and one decision inside it",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "One restart, at the end, through a handler",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "changed=0, demonstrated",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "Break it on purpose",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-ansible-roles-idempotency"
+}

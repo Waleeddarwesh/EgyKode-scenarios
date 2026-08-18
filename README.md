@@ -5,6 +5,7 @@ with nothing to install.
 
 | Directory | Scenario | Backend |
 | --- | --- | --- |
+| `ansible-roles-idempotency` | Ansible Roles and Idempotency You Can Prove | ubuntu |
 | `aws-vpc-networking` | AWS VPC: Subnets, Gateways and Route Tables | ubuntu |
 | `bash-backup-retention` | A Backup Script You Can Trust | ubuntu |
 | `docker-multi-stage-build` | Production-Grade Multi-Stage Dockerfile | ubuntu |
