@@ -1,0 +1,15 @@
+{
+  "title": "Network Diagnosis: Name, Route, Reachability",
+  "description": "Work a failing connection from the bottom up — does the name resolve, where would the packet go, and is 'refused' or 'timed out' the answer.",
+  "labId": "lab-21-linux-networking-troubleshooting",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "Does the name resolve", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Where would the packet go", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Refused is not timed out", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}

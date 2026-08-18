@@ -1,0 +1,15 @@
+{
+  "title": "Kubernetes Services: Endpoints, DNS and the Empty List",
+  "description": "Put a stable name in front of Pods that come and go, reach it by DNS, then empty its endpoint list two different ways and know which is which.",
+  "labId": "lab-k8s-services",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "A Service in front of three Pods", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Reach it by name", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Empty the endpoint list", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "kubernetes-kubeadm-1node" }
+}

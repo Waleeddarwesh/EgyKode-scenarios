@@ -1,0 +1,15 @@
+{
+  "title": "Linux Server Administration: Users, Permissions, Services",
+  "description": "Create a deployment account, set permissions that survive the next engineer, and enable a service so it comes back on boot.",
+  "labId": "lab-20-linux-server-administration",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "A user for the job", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Permissions that hold", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "A service that survives a reboot", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}

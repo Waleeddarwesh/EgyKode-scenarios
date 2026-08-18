@@ -1,0 +1,15 @@
+{
+  "title": "Kubernetes Storage: What Survives a Pod",
+  "description": "Prove a container filesystem is disposable, keep the same data across a Pod deletion with a PVC, then find out why three replicas on one ReadWriteOnce claim leaves Pods Pending.",
+  "labId": "lab-k8s-storage",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "The filesystem is disposable", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "A claim that outlives the Pod", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "The access mode that blocks a rollout", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "kubernetes-kubeadm-1node" }
+}

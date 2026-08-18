@@ -1,0 +1,15 @@
+{
+  "title": "TLS Diagnosis: Read the Certificate, Name the Layer",
+  "description": "Read a certificate from the command line, prove a port is reachable independently of TLS, and diagnose an expired and a wrong-host certificate.",
+  "labId": "lab-http-tls-troubleshooting",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "Read the certificate", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Reachable is not the same as working", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Two broken certificates", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}

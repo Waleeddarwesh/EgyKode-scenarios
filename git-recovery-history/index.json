@@ -1,0 +1,15 @@
+{
+  "title": "Git Recovery: Reflog, Lost Branches and Secrets in History",
+  "description": "Undo a hard reset, restore a branch you deleted, and remove a secret from every commit that ever held it.",
+  "labId": "lab-git-recovery-history",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "Undo a hard reset", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Restore a deleted branch", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Purge a secret from history", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}

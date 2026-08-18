@@ -1,0 +1,15 @@
+{
+  "title": "Processes, Services and Logs: Find It, Read It, Fix It",
+  "description": "Find the process holding a port, read a service's own logs, then break a service on purpose and diagnose it from the journal.",
+  "labId": "lab-linux-processes-services-logs",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "What holds the port", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Ask systemd, then ask the application", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Break it, then fix it", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Reverse Proxy and Load Balancing: 502 vs 504",
+  "description": "Put nginx in front of two backends, keep serving when one dies, forward the real client IP, and produce a 502 and a 504 deliberately.",
+  "labId": "lab-reverse-proxy-load-balancing",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "Two backends behind one proxy", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Lose a backend without losing the client", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "502 and 504 on purpose", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}

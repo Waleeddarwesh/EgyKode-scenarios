@@ -1,0 +1,15 @@
+{
+  "title": "Docker Networks, Volumes and Healthchecks",
+  "description": "Reach a service by name, keep data across a down and up, and make a container wait for a database that is ready rather than merely started.",
+  "labId": "lab-docker-networking-volumes-healthchecks",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "Names, not addresses", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Data that survives", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Started is not ready", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}

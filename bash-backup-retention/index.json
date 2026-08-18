@@ -1,0 +1,15 @@
+{
+  "title": "A Backup Script You Can Trust",
+  "description": "Make a script fail loudly on the first error, run twice without duplicating, prune its own old backups, and report a failure without anyone reading the logs.",
+  "labId": "lab-22-bash-automation-backup-healthcheck",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "Fail on the first error", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Safe to run twice, and self-pruning", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "A failure nobody has to read logs to notice", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}

@@ -1,14 +1,17 @@
-# Production-Grade Multi-Stage Dockerfile
-
 An application is waiting at `/root/app`. You will build it three ways and
-measure the difference:
+measure the difference between them.
 
-1. one stage, everything in the final image
-2. two stages, so the build tools stay behind
-3. running as a user that is not root
+**What you will do**
 
-The image sizes are real. Check them yourself with `docker images`.
+1. **Build it naively** — one stage, compiler and all, then read the size
+2. **Split the build** — two stages, so the build tools stay behind
+3. **Drop root** — run the same image as a user that is not root
+
+The sizes are real, and you will check them yourself rather than take the
+lab's word for it.
+
+Have a look at what you are starting from:
 
 ```
-cd /root/app && ls
-```
+cd /root/app && ls -la
+```{{exec}}

@@ -9,3 +9,11 @@ it feels.
 
 Return to EgyKode to record what you proved, and to read why removing a
 committed secret from history still does not make that secret safe.
+
+---
+
+## Where this fits
+
+**Phase: Foundations** — part of [Build the Production Platform](https://egykode.com/en/labs/).
+
+The platform is delivered through pull requests onto a protected branch. Branching, rebasing and resolving a conflict properly are the daily mechanics of every phase that follows.
