@@ -1,0 +1,39 @@
+{
+  "title": "Node Drain: Maintenance Without an Outage",
+  "description": "Take a node out of service while traffic keeps flowing, meet the workload that was never going to survive it, and watch a PodDisruptionBudget refuse a drain that would breach availability.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "A workload built to survive being moved",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Drain, and the Pod that cannot come back",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "A budget that refuses the drain",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "Back into service",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  },
+  "labId": "lab-k8s-node-drain-upgrade"
+}

@@ -11,6 +11,7 @@ with nothing to install.
 | `git-branching-collaboration` | Git Branching & Collaboration | ubuntu |
 | `git-recovery-history` | Git Recovery: Reflog, Lost Branches and Secrets in History | ubuntu |
 | `k8s-config-secrets` | Kubernetes Config & Secrets: Probes, Limits, Rollouts | kubernetes-kubeadm-1node |
+| `k8s-node-drain` | Node Drain: Maintenance Without an Outage | kubernetes-kubeadm-2nodes |
 | `k8s-rbac-service-accounts` | Kubernetes RBAC & Service Accounts | kubernetes-kubeadm-1node |
 | `k8s-services-endpoints` | Kubernetes Services: Endpoints, DNS and the Empty List | kubernetes-kubeadm-1node |
 | `k8s-storage-persistence` | Kubernetes Storage: What Survives a Pod | kubernetes-kubeadm-1node |
