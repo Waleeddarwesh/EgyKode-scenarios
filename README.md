@@ -10,6 +10,8 @@ with nothing to install.
 | `docker-networks-volumes-healthchecks` | Docker Networks, Volumes and Healthchecks | ubuntu |
 | `git-branching-collaboration` | Git Branching & Collaboration | ubuntu |
 | `git-recovery-history` | Git Recovery: Reflog, Lost Branches and Secrets in History | ubuntu |
+| `k8s-config-secrets` | Kubernetes Config & Secrets: Probes, Limits, Rollouts | kubernetes-kubeadm-1node |
+| `k8s-rbac-service-accounts` | Kubernetes RBAC & Service Accounts | kubernetes-kubeadm-1node |
 | `k8s-services-endpoints` | Kubernetes Services: Endpoints, DNS and the Empty List | kubernetes-kubeadm-1node |
 | `k8s-storage-persistence` | Kubernetes Storage: What Survives a Pod | kubernetes-kubeadm-1node |
 | `k8s-workloads` | Kubernetes Workloads: Pod, ReplicaSet, Deployment | kubernetes-kubeadm-1node |

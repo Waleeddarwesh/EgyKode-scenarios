@@ -1,0 +1,39 @@
+{
+  "title": "Kubernetes Config & Secrets: Probes, Limits, Rollouts",
+  "description": "Take configuration out of the image, watch a readiness probe pull a Pod out of a Service without restarting it, set the QoS class you meant to set, and make a config change actually reach the Pods.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Configuration that is not in the image",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Readiness removes a Pod without restarting it",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Requests, limits and the QoS class you meant",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "Make a config change reach the Pods",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  },
+  "labId": "lab-11-core-kubernetes-workloads-configmaps-secrets"
+}
