@@ -1,0 +1,16 @@
+{
+  "title": "Terraform State Recovery: Drift, Import, and a Deleted State File",
+  "description": "Reconcile a change somebody made by hand, adopt a resource Terraform never created, restore a state file that was deleted, and move resources without destroying a single one.",
+  "details": {
+    "intro": { "text": "intro.md", "foreground": "setup.sh" },
+    "steps": [
+      { "title": "Drift, and the two ways out", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "A resource Terraform does not know about", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "The state file is gone", "text": "step3.md", "verify": "verify3.sh" },
+      { "title": "Refactoring without destroying", "text": "step4.md", "verify": "verify4.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" },
+  "labId": "lab-terraform-state-recovery"
+}

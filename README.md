@@ -32,6 +32,7 @@ with nothing to install.
 | `terraform-fundamentals` | Terraform Fundamentals: Plan, Apply, State, Destroy | ubuntu |
 | `terraform-modules` | Terraform Modules: Build One, Call It Twice | ubuntu |
 | `terraform-remote-state` | Terraform Remote State and Locking | ubuntu |
+| `terraform-state-recovery` | Terraform State Recovery: Drift, Import, and a Deleted State File | ubuntu |
 | `tls-certificate-diagnosis` | TLS Diagnosis: Read the Certificate, Name the Layer | ubuntu |
 
 Each is three steps with a verification script per step, a setup script that
