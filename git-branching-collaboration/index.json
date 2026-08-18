@@ -1,0 +1,34 @@
+{
+  "title": "Git Branching & Collaboration",
+  "description": "Branch, rebase, resolve a real conflict, and recover a commit you thought you had destroyed.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Branch and rebase",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Resolve a real conflict",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Recover with the reflog",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-23-git-branching-collaboration"
+}

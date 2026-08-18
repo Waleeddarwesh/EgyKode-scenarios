@@ -1,0 +1,34 @@
+{
+  "title": "Kubernetes Workloads: Pod, ReplicaSet, Deployment",
+  "description": "Run a Deployment, find the ReplicaSet that owns its Pods, kill a Pod and watch it return, then roll an update forward and back.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "A Deployment, and who owns the Pods",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Delete a Pod, then delete the Deployment",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Roll forward, roll back",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  },
+  "labId": "lab-k8s-workloads"
+}
