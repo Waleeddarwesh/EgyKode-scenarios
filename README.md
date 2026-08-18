@@ -25,6 +25,7 @@ with nothing to install.
 | `reverse-proxy-load-balancing` | Reverse Proxy and Load Balancing: 502 vs 504 | ubuntu |
 | `terraform-ci-gate` | The Terraform Gate: fmt, validate, lint, scan, plan | ubuntu |
 | `terraform-fundamentals` | Terraform Fundamentals: Plan, Apply, State, Destroy | ubuntu |
+| `terraform-modules` | Terraform Modules: Build One, Call It Twice | ubuntu |
 | `terraform-remote-state` | Terraform Remote State and Locking | ubuntu |
 | `tls-certificate-diagnosis` | TLS Diagnosis: Read the Certificate, Name the Layer | ubuntu |
 
