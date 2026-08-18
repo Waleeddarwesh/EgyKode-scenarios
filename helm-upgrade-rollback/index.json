@@ -1,0 +1,39 @@
+{
+  "title": "Helm Upgrades, Rollbacks and Release Strategy",
+  "description": "Ship a release, break the next one on purpose, and watch Helm put it back by itself - then roll back to a named revision and check what is actually running.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "A release to operate",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Upgrade, and read the history",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Break one on purpose",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "Roll back to a named revision",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  },
+  "labId": "lab-helm-upgrade-rollback"
+}
