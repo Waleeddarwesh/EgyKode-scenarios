@@ -28,6 +28,7 @@ with nothing to install.
 | `k8s-services-endpoints` | Kubernetes Services: Endpoints, DNS and the Empty List | kubernetes-kubeadm-1node |
 | `k8s-storage-persistence` | Kubernetes Storage: What Survives a Pod | kubernetes-kubeadm-1node |
 | `k8s-workloads` | Kubernetes Workloads: Pod, ReplicaSet, Deployment | kubernetes-kubeadm-1node |
+| `kube-prometheus-stack` | kube-prometheus-stack: Targets, ServiceMonitors and Metrics That Survive | kubernetes-kubeadm-1node |
 | `linux-processes-services-logs` | Processes, Services and Logs: Find It, Read It, Fix It | ubuntu |
 | `linux-ssh-hardening` | SSH Hardening Without Locking Yourself Out | ubuntu |
 | `linux-users-permissions-services` | Linux Server Administration: Users, Permissions, Services | ubuntu |

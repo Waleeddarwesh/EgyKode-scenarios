@@ -1,0 +1,39 @@
+{
+  "title": "kube-prometheus-stack: Targets, ServiceMonitors and Metrics That Survive",
+  "description": "Install the stack on a real cluster, make Prometheus discover your application through a ServiceMonitor rather than a config file, read CPU and memory in Grafana, and prove the metrics outlive the Prometheus Pod.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "What the stack is already watching",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "A ServiceMonitor Prometheus actually selects",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Grafana, and the numbers behind the graph",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "Metrics that outlive the Pod",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  },
+  "labId": "lab-17-deploying-kube-prometheus-stack-on-aws-eks"
+}
