@@ -1,0 +1,15 @@
+{
+  "title": "Chaos Experiments: Measure the Recovery You Assume",
+  "description": "Put a workload under steady traffic, kill a Pod and time the replacement, find the failure your replicas do not survive, and write the hypothesis down before each one.",
+  "details": {
+    "intro": { "text": "intro.md", "foreground": "setup.sh" },
+    "steps": [
+      { "title": "A hypothesis, and something to break", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "The failure that does not recover", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "The experiment record", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "kubernetes-kubeadm-1node" },
+  "labId": "lab-sre-chaos-failure-injection"
+}
