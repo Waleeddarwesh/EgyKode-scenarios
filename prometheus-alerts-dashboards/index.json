@@ -1,0 +1,15 @@
+{
+  "title": "Prometheus Alerts That Fire When You Mean Them To",
+  "description": "Write an alert rule, cause the condition, watch it move inactive to pending to firing, then remove the for: clause and see exactly how much pager noise it was suppressing.",
+  "details": {
+    "intro": { "text": "intro.md", "foreground": "setup.sh" },
+    "steps": [
+      { "title": "A rule, and what inactive means", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Pending, then firing", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "An alert somebody can act on", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" },
+  "labId": "lab-18-custom-prometheus-alert-rules-grafana-dashboards"
+}
