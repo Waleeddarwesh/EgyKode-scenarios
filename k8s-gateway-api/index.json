@@ -1,0 +1,15 @@
+{
+  "title": "From Ingress to Gateway API",
+  "description": "Reach one application through both an Ingress and an HTTPRoute, split traffic 80/20 with no annotations at all, and see the ownership boundary Ingress could never express.",
+  "details": {
+    "intro": { "text": "intro.md", "foreground": "setup.sh" },
+    "steps": [
+      { "title": "The same app, two ways in", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "A weighted split, counted", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Who owns the Gateway", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "kubernetes-kubeadm-1node" },
+  "labId": "lab-k8s-gateway-api"
+}

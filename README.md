@@ -17,6 +17,7 @@ with nothing to install.
 | `helm-upgrade-rollback` | Helm Upgrades, Rollbacks and Release Strategy | kubernetes-kubeadm-1node |
 | `jenkins-fundamentals` | Jenkins: Persistent Home, Push Triggers and Who May Build | ubuntu |
 | `k8s-config-secrets` | Kubernetes Config & Secrets: Probes, Limits, Rollouts | kubernetes-kubeadm-1node |
+| `k8s-gateway-api` | From Ingress to Gateway API | kubernetes-kubeadm-1node |
 | `k8s-networkpolicy-hpa` | NetworkPolicies and the HPA | kubernetes-kubeadm-1node |
 | `k8s-node-drain` | Node Drain: Maintenance Without an Outage | kubernetes-kubeadm-2nodes |
 | `k8s-rbac-service-accounts` | Kubernetes RBAC & Service Accounts | kubernetes-kubeadm-1node |
