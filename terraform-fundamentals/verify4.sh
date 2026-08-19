@@ -25,6 +25,14 @@ echo "$BUCKETS" | grep -q "egykode-assets" && {
 
 # The specific instance the learner built must report terminated, which is a
 # stronger statement than "nothing is running".
+# Everything above is also true of an account where nothing was ever built, so
+# require evidence that this instance existed and was then terminated. Step 4
+# writes this file before destroying anything.
+[ -f /tmp/was_instance ] || {
+  echo "FAIL: /tmp/was_instance is missing - nothing here was built and destroyed"
+  echo "      Record the instance id before the destroy, as the step does."
+  exit 1; }
+
 if [ -f /tmp/was_instance ]; then
   WAS=$(cat /tmp/was_instance)
   ST=$($AWS ec2 describe-instances --instance-ids "$WAS" \

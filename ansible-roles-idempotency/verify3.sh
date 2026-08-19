@@ -32,7 +32,7 @@ PID_AFTER=$(systemctl show nginx -p MainPID --value)
 # The service still has to be up and serving - a playbook that converges on a
 # broken system is idempotent and useless.
 systemctl is-active --quiet nginx || { echo "FAIL: nginx is not running"; exit 1; }
-CODE=$(curl -s -o /dev/null -w '%{http_code}' http://localhost/ 2>/dev/null)
+CODE=$(curl -s --max-time 10 -o /dev/null -w '%{http_code}' http://localhost/ 2>/dev/null)
 [ "$CODE" = "200" ] || { echo "FAIL: http://localhost/ returned $CODE, expected 200"; exit 1; }
 
 echo "PASS - second run changed=0, no handler fired, nginx untouched and serving"
