@@ -29,6 +29,7 @@ with nothing to install.
 | `linux-processes-services-logs` | Processes, Services and Logs: Find It, Read It, Fix It | ubuntu |
 | `linux-ssh-hardening` | SSH Hardening Without Locking Yourself Out | ubuntu |
 | `linux-users-permissions-services` | Linux Server Administration: Users, Permissions, Services | ubuntu |
+| `loki-log-queries` | Centralised Logging: Ship, Select, and Find the Cause | kubernetes-kubeadm-1node |
 | `network-layer-diagnosis` | Network Diagnosis: Name, Route, Reachability | ubuntu |
 | `postgres-backup-restore` | Backup and Restore You Have Actually Tested | ubuntu |
 | `prometheus-alerts-dashboards` | Prometheus Alerts That Fire When You Mean Them To | ubuntu |

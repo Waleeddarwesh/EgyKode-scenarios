@@ -1,0 +1,15 @@
+{
+  "title": "Centralised Logging: Ship, Select, and Find the Cause",
+  "description": "Install the agent that ships every Pod's logs, write LogQL that selects by label before it scans, and read the cause of a crash out of a container that no longer exists.",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "Ship the logs", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Select first, then scan", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Find a cause the Pod no longer has", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "kubernetes-kubeadm-1node" },
+  "labId": "lab-loki-centralized-logging"
+}
