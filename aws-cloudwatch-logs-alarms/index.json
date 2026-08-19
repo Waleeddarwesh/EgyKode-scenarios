@@ -1,0 +1,34 @@
+{
+  "title": "CloudWatch Logs, Custom Metrics and an Alarm Worth Waking For",
+  "description": "Ship application logs into a log group and query them, publish the metric the hypervisor cannot see, and alarm on a symptom a user would actually notice rather than on CPU.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "The metric the hypervisor cannot see",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Query the logs",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Alarm on something that matters",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-aws-ec2-cloudwatch-ssm"
+}

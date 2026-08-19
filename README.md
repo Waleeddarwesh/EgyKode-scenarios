@@ -7,6 +7,7 @@ with nothing to install.
 | --- | --- | --- |
 | `ansible-roles-idempotency` | Ansible Roles and Idempotency You Can Prove | ubuntu |
 | `argocd-gitops` | GitOps with Argo CD: Sync, Drift and Self-Heal | kubernetes-kubeadm-1node |
+| `aws-cloudwatch-logs-alarms` | CloudWatch Logs, Custom Metrics and an Alarm Worth Waking For | ubuntu |
 | `aws-vpc-networking` | AWS VPC: Subnets, Gateways and Route Tables | ubuntu |
 | `bash-backup-retention` | A Backup Script You Can Trust | ubuntu |
 | `docker-compose-reverse-proxy` | Nginx, Gunicorn and Postgres in One Compose Stack | ubuntu |

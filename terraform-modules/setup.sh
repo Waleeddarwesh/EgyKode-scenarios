@@ -8,8 +8,20 @@ if ! command -v terraform >/dev/null 2>&1; then
   curl -fsSL https://releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_amd64.zip -o /tmp/tf.zip 2>/dev/null
   unzip -q -o /tmp/tf.zip -d /usr/local/bin 2>/dev/null
 fi
-command -v aws >/dev/null 2>&1 || \
+# Ubuntu 24.04 dropped the awscli package entirely: apt-cache policy reports
+# "Candidate: (none)" and the install fails with "has no installation
+# candidate". Left there, every later command dies on "aws: not found" several
+# steps after the real cause. Fall back to the official installer, which is
+# also the v2 these labs are written against - the apt package was v1.
+if ! command -v aws >/dev/null 2>&1; then
   DEBIAN_FRONTEND=noninteractive apt-get install -y -qq awscli >/dev/null 2>&1
+fi
+if ! command -v aws >/dev/null 2>&1; then
+  curl -fsSL "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o /tmp/awscliv2.zip 2>/dev/null
+  unzip -q -o /tmp/awscliv2.zip -d /tmp 2>/dev/null
+  /tmp/aws/install --update >/dev/null 2>&1
+fi
+command -v aws >/dev/null 2>&1 || echo "WARNING: the AWS CLI did not install - the steps below will fail"
 
 # The credentials are deliberately worthless; LocalStack checks the shape of a
 # request, not who sent it.
