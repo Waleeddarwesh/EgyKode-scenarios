@@ -1,0 +1,29 @@
+{
+  "title": "Jenkins: Persistent Home, Push Triggers and Who May Build",
+  "description": "Put JENKINS_HOME on a named volume and prove a job survives the container being deleted, then create a read-only user and demonstrate they cannot start a build.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "A Jenkins that survives being restarted",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Two users, and the one who cannot build",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-jenkins-fundamentals"
+}
