@@ -1,0 +1,15 @@
+{
+  "title": "GitOps with Argo CD: Sync, Drift and Self-Heal",
+  "description": "Deploy by pushing a commit to a Git server running inside the cluster, then break the cluster by hand and watch Argo CD put it back.",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "Point Argo CD at a repository", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "Deploy by committing, not by applying", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Break it by hand and watch it heal", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "kubernetes-kubeadm-1node" },
+  "labId": "lab-argocd-gitops-reconciliation"
+}

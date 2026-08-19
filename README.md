@@ -6,6 +6,7 @@ with nothing to install.
 | Directory | Scenario | Backend |
 | --- | --- | --- |
 | `ansible-roles-idempotency` | Ansible Roles and Idempotency You Can Prove | ubuntu |
+| `argocd-gitops` | GitOps with Argo CD: Sync, Drift and Self-Heal | kubernetes-kubeadm-1node |
 | `aws-vpc-networking` | AWS VPC: Subnets, Gateways and Route Tables | ubuntu |
 | `bash-backup-retention` | A Backup Script You Can Trust | ubuntu |
 | `docker-compose-reverse-proxy` | Nginx, Gunicorn and Postgres in One Compose Stack | ubuntu |
