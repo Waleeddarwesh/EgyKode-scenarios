@@ -1,0 +1,34 @@
+{
+  "title": "Jenkins Pipeline: Build, Scan and Push an Image",
+  "description": "Take a commit to a scanned, tagged image in a private registry, with a vulnerability gate that blocks the push rather than reporting on it afterwards.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "A pipeline that tags with the commit",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "The credential that never reaches the log",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Prove the gate stops the build",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-jenkins-docker-pipeline"
+}
