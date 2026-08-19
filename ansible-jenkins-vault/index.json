@@ -1,0 +1,39 @@
+{
+  "title": "Ansible: A Build Host From Nothing, Twice, With Secrets From Vault",
+  "description": "Compose roles into one playbook that turns a bare host into a working Jenkins, prove the second run changes nothing, take the admin password from Vault instead of the repository, and write a verify play that fails loudly when something is missing.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "One playbook, several roles",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "The second run should say nothing",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "The password that is not in the repository",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "A verify playbook that fails loudly",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-08-automated-jenkins-server-toolchain-provisioning"
+}

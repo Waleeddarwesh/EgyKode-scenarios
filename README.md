@@ -5,6 +5,7 @@ with nothing to install.
 
 | Directory | Scenario | Backend |
 | --- | --- | --- |
+| `ansible-jenkins-vault` | Ansible: A Build Host From Nothing, Twice, With Secrets From Vault | ubuntu |
 | `ansible-roles-idempotency` | Ansible Roles and Idempotency You Can Prove | ubuntu |
 | `argocd-gitops` | GitOps with Argo CD: Sync, Drift and Self-Heal | kubernetes-kubeadm-1node |
 | `aws-cloudwatch-logs-alarms` | CloudWatch Logs, Custom Metrics and an Alarm Worth Waking For | ubuntu |
