@@ -88,10 +88,13 @@ JSON
 # client sends application/vnd.docker.distribution.manifest.v2+json. The layers
 # upload fine and only the manifest is refused, so the error reads as a broken
 # image rather than a registry setting.
+# Pinned like everything else here. A registry that changes under the
+# scenario changes what its scanner finds and how its retention behaves,
+# which are the two things being taught.
 docker rm -f zot >/dev/null 2>&1
 docker run -d --name zot --restart=unless-stopped -p 5000:5000 \
   -v /root/registry/etc/config.json:/etc/zot/config.json:ro \
-  ghcr.io/project-zot/zot-linux-amd64:latest >/dev/null 2>&1
+  ghcr.io/project-zot/zot-linux-amd64:v2.1.20 >/dev/null 2>&1
 for i in $(seq 1 40); do
   [ "$(curl -s -o /dev/null -w '%{http_code}' --max-time 5 http://localhost:5000/v2/ 2>/dev/null)" = "200" ] && break
   sleep 3
