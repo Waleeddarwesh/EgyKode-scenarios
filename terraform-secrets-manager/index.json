@@ -1,0 +1,15 @@
+{
+  "title": "Terraform, Secrets Manager and a Credential Nobody Types",
+  "description": "Generate a database password with Terraform so no human ever chooses it, store it with its endpoint in Secrets Manager, have an application fetch it at run time, and move the database to prove the application follows one secret rather than five config files.",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "A password nobody types", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "The application reads it at run time", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Move the database, change one thing", "text": "step3.md", "verify": "verify3.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" },
+  "labId": "lab-04-amazon-rds-postgresql-aws-secrets-manager-integration"
+}
