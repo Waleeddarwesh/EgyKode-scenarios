@@ -14,6 +14,7 @@ with nothing to install.
 | `docker-compose-reverse-proxy` | Nginx, Gunicorn and Postgres in One Compose Stack | ubuntu |
 | `docker-multi-stage-build` | Production-Grade Multi-Stage Dockerfile | ubuntu |
 | `docker-networks-volumes-healthchecks` | Docker Networks, Volumes and Healthchecks | ubuntu |
+| `git-branch-protection` | Branch Protection: Rejected Pushes, Blocked Merges and CODEOWNERS | ubuntu |
 | `git-branching-collaboration` | Git Branching & Collaboration | ubuntu |
 | `git-recovery-history` | Git Recovery: Reflog, Lost Branches and Secrets in History | ubuntu |
 | `helm-custom-chart` | A Custom Helm Chart That Rolls on Config Change | kubernetes-kubeadm-1node |

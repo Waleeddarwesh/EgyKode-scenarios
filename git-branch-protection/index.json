@@ -1,0 +1,39 @@
+{
+  "title": "Branch Protection: Rejected Pushes, Blocked Merges and CODEOWNERS",
+  "description": "Protect a branch on a real Git server and watch it refuse: a direct push declined by a pre-receive hook, a merge blocked by a failing status check, a reviewer requested automatically by CODEOWNERS, and a pull request stopped because main moved underneath it.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "A push the server refuses",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "A pull request that cannot merge",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "CODEOWNERS, and who it asks",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "Why \"up to date\" matters",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "labId": "lab-git-professional-collaboration"
+}
