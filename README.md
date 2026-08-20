@@ -38,6 +38,7 @@ with nothing to install.
 | `network-layer-diagnosis` | Network Diagnosis: Name, Route, Reachability | ubuntu |
 | `postgres-backup-restore` | Backup and Restore You Have Actually Tested | ubuntu |
 | `prometheus-alerts-dashboards` | Prometheus Alerts That Fire When You Mean Them To | ubuntu |
+| `registry-scanning-s3-hardening` | A Registry That Scans and Prunes, and Buckets That Are Private by Construction | ubuntu |
 | `reverse-proxy-load-balancing` | Reverse Proxy and Load Balancing: 502 vs 504 | ubuntu |
 | `terraform-ci-gate` | The Terraform Gate: fmt, validate, lint, scan, plan | ubuntu |
 | `terraform-fundamentals` | Terraform Fundamentals: Plan, Apply, State, Destroy | ubuntu |

@@ -1,0 +1,16 @@
+{
+  "title": "A Registry That Scans and Prunes, and Buckets That Are Private by Construction",
+  "description": "Push an image to a registry that scans it on arrival and expires what you stop tagging, then build S3 buckets closed from the moment they exist and recover a deleted state file from versioning.",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "steps": [
+      { "title": "A registry that scans what you push", "text": "step1.md", "verify": "verify1.sh" },
+      { "title": "A policy that expires what you stop tagging", "text": "step2.md", "verify": "verify2.sh" },
+      { "title": "Buckets that are private by construction", "text": "step3.md", "verify": "verify3.sh" },
+      { "title": "Versioning, and getting a deleted object back", "text": "step4.md", "verify": "verify4.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" },
+  "labId": "lab-03-amazon-ecr-container-registry-s3-storage-buckets"
+}
